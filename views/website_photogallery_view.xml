@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<openerp>
+<data>
+        <act_window id="action_website_photogallery" name="Photo Gallery" res_model="website.photogallery" />
+        <menuitem id="menu_website_photogallery" name="Photo Gallery" action="action_website_photogallery" />
+
+
+        <record id="view_product_image_form" model="ir.ui.view">
+            <field name="name">website.photogallery.form</field>
+            <field name="model">website.photogallery</field>
+            <field name="arch" type="xml">
+                <form string="Product Images" version="7.0">
+                    <notebook colspan="4">
+                        <page string="Image">
+                            <group col="4" colspan="4">
+                                <field name="name" colspan="2"/>
+                            </group>
+                            <group col="4" colspan="4">
+                                <field name="image" colspan="4" attrs="{'required': True}"/>
+                            </group>
+                            <separator string="Preview (Only when saved)" colspan="4"/>
+                            <field name="preview" widget="image" nolabel="1" colspan="4"/>
+                        </page>
+                        <page string="Comments">
+                            <field name="comments" nolabel="1" colspan="4"/>
+                        </page>
+                    </notebook>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_product_image_tree" model="ir.ui.view">
+            <field name="name">website.photogallery.tree</field>
+            <field name="model">website.photogallery</field>
+            <field name="arch" type="xml">
+                <tree string="Product Images">
+                    <field name="name"/>
+                    <field name="image"/>
+                    <field name="comments"/>
+                </tree>
+            </field>
+        </record>
+
+</data>
+</openerp>
+

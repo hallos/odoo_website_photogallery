@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<openerp>
+<data>
+
+<!-- Add Photo Gallery page to website -->
+<template id="website.photogallery" name="Photo Gallery" page="True" >
+    <t t-call="website.layout">
+      <div id="wrap">
+        <div class="oe_structure" />
+        <t t-foreach="photos" t-as="photo">
+           <span t-field="photo.image" t-field-options='{"widget": "image"}'/>
+        </t>
+        </div>
+        </t>
+</template>
+
+
+<!-- Add Gallery link to website menu -->
+<record id="photogallery_menu" model="website.menu">
+        <field name="name">Gallery</field>
+        <field name="url">/page/photogallery</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">20</field>
+</record>
+
+</data>
+</openerp>
+
