@@ -5,6 +5,6 @@
         'depends': ['website'],
         'data': ['views/website_photogallery_view.xml', 
 				'views/website_photogallery_frontend.xml',
-				'security/ir.amodel.access.csv'],
+				'security/ir.model.access.csv'],
 }
 
