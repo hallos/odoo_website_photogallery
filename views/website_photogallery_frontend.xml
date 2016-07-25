@@ -7,9 +7,28 @@
     <t t-call="website.layout">
       <div id="wrap">
         <div class="oe_structure" />
-        <t t-foreach="photos" t-as="photo">
+       <!-- <t t-foreach="photos" t-as="photo">
            <span t-field="photo.image" t-field-options='{"widget": "image"}'/>
         </t>
+	-->
+	 <section class="o_gallery s_image_gallery o_spc-big o_grid" data-columns="4" style="overflow: hidden;">
+        <div class="container">
+	 <div class="row">
+
+	    <t t-foreach="photos" t-as="photo">
+		<t t-if="photo_index%4==0">
+          		<div class="row" />
+		</t>
+            <div class="col-md-3">
+                <span t-field="photo.image" t-field-options='{"widget":"image"}'  data-index="photo_index" class="img img-responsive" />
+            </div>
+           </t>
+
+	</div>
+          <div class="row"/>
+        </div>
+      </section>
+
         </div>
         </t>
 </template>
