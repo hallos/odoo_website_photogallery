@@ -1,4 +1,4 @@
-from openerp.osv import osv, fields
+from openerp.osv import osv, fields, tools
 import base64
 
 class photogallery(osv.Model):
@@ -7,8 +7,7 @@ class photogallery(osv.Model):
 
         def get_image(self, cr, uid, id):
 			each = self.read(cr, uid, id, ['image'])
-			#img = each['image']
-			img = tools.image_get_resized_images(each['image'])
+			img = each['image']
 			return img
 
         def _get_image(self, cr, uid, ids, field_name, arg, context={}):
