@@ -21,8 +21,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_photogallery.field_website_photogallery_comments
 #: model:ir.ui.view,arch_db:website_photogallery.view_product_image_form
 #, fuzzy
-msgid "Comments"
-msgstr "Comentarios"
+msgid "Description"
+msgstr "Descripción"
 
 #. module: website_photogallery
 #: model:ir.model.fields,field_description:website_photogallery.field_website_photogallery_create_uid

@@ -1,7 +1,7 @@
 from openerp.osv import osv, fields
 import base64
 
-class photogallery(osv.Model):
+class photogallery(osv.osv):
 
         _name = "website.photogallery"
 
