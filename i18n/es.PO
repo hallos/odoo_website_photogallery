@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.8\n"
 "Last-Translator: \n"
-"Language: es_CL\n"
+"Language: es\n"
 
 #. module: website_photogallery
 #: model:ir.model.fields,field_description:website_photogallery.field_website_photogallery_comments
