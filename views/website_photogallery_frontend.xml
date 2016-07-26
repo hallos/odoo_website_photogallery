@@ -8,14 +8,16 @@
       <div id="wrap">
         <div class="oe_structure" />
         <t t-foreach="photos" t-as="photo">
+			<table>
 			<tr>
 				<th>
 					<span t-field="photo.image" t-field-options='{"widget": "image"}'/>
 				</th>
 				<th>
-					<span t-field="photo.comments" t-field-options='{"widget": "text"}'/>
+					<t t-esc="photo.comments" />
 				</th>
 			</tr>
+			</table>
         </t>
         </div>
         </t>
