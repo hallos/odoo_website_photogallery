@@ -13,7 +13,7 @@
 					<span t-field="photo.image" t-field-options='{"widget": "image"}'/>
 				</th>
 				<th>
-					<span t-field="photo.image" t-field-options="'{"widget": "text"}'/>
+					<span t-field="photo.image" t-field-options='{"widget": "text"}'/>
 				</th>
 			</tr>
         </t>
