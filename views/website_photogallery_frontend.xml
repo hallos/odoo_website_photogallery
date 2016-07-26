@@ -10,7 +10,8 @@
         <t t-foreach="photos" t-as="photo">
 			<table>
 			<tr>
-				<td> <span t-field="photo.image" t-field-options='{"widget": "image", "class":"oe_avatar"}'/> </td>
+				<td> <span t-field="photo.image" t-field-options='{"widget": "image"}' /> </td>
+				<td> <div t-att-class="img" t-att-src="photo.image" /> </td>
 				<td align="center" valign="center"> <t t-esc="photo.comments" /> </td>
 			</tr>
 			</table>
