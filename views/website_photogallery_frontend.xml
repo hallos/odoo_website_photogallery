@@ -10,12 +10,8 @@
         <t t-foreach="photos" t-as="photo">
 			<table>
 			<tr>
-				<th>
-					<span t-field="photo.image" t-field-options='{"widget": "image"}'/>
-				</th>
-				<th>
-					<t t-esc="photo.comments" />
-				</th>
+				<td colspan=10> <span t-field="photo.image" t-field-options='{"widget": "image"}'/> </td>
+				<td colspan=5 align="center" valign="center"> <t t-esc="photo.comments" /> </td>
 			</tr>
 			</table>
         </t>
