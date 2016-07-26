@@ -1,4 +1,4 @@
-from openerp.osv import osv, fields, tools
+from openerp.osv import osv, fields
 import base64
 
 class photogallery(osv.Model):
