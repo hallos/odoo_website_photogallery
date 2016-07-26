@@ -7,8 +7,14 @@
     <t t-call="website.layout">
       <div id="wrap">
         <div class="oe_structure" />
+		<br></br>
         <t t-foreach="photos" t-as="photo">
-           <span t-field="photo.image" t-field-options='{"widget": "image"}'/>
+			<table style="width:60%" align="center">
+			<tr>
+				<td style="width:70%"> <span t-field="photo.image" t-field-options='{"widget": "image"}' /> </td>
+				<td style="width:30%; vertical-align:top;" > <u><t t-esc="photo.name"/></u><br></br>  <t t-esc="photo.comments" /> </td>
+			</tr>
+			</table>
         </t>
         </div>
         </t>

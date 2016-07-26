@@ -6,9 +6,9 @@ class photogallery(osv.Model):
         _name = "website.photogallery"
 
         def get_image(self, cr, uid, id):
-                each = self.read(cr, uid, id, ['image'])
-                img = each['image']
-                return img
+			each = self.read(cr, uid, id, ['image'])
+			img = each['image']
+			return img
 
         def _get_image(self, cr, uid, ids, field_name, arg, context={}):
                 res = {}
