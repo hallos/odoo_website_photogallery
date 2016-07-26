@@ -20,6 +20,6 @@ class photogallery(osv.Model):
         'name': fields.char('Image Title', size=100, required=True),
         'image': fields.binary('Image', filters='*.png,*.jpg,*.gif'),
         'preview': fields.function(_get_image, type="binary", method=True),
-        'comments': fields.text('Comments'),
+        'description': fields.text('Description'),
         }
 
