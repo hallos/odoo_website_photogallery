@@ -21,8 +21,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:website_photogallery.field_website_photogallery_comments
 #: model:ir.ui.view,arch_db:website_photogallery.view_product_image_form
 #, fuzzy
-msgid "Comments"
-msgstr "Comentarios"
+msgid "Description"
+msgstr "Descripción"
 
 #. module: website_photogallery
 #: model:ir.model.fields,field_description:website_photogallery.field_website_photogallery_create_uid
@@ -42,7 +42,7 @@ msgstr "Nombre"
 #. module: website_photogallery
 #: model:website.menu,name:website_photogallery.photogallery_menu
 msgid "Gallery"
-msgstr "Gallería"
+msgstr "Galería"
 
 #. module: website_photogallery
 #: model:ir.model.fields,field_description:website_photogallery.field_website_photogallery_id
@@ -79,7 +79,7 @@ msgstr "Fecha de actualización"
 #: model:ir.actions.act_window,name:website_photogallery.action_website_photogallery
 #: model:ir.ui.menu,name:website_photogallery.menu_website_photogallery
 msgid "Photo Gallery"
-msgstr "Gallería de Fotos"
+msgstr "Galería de Fotos"
 
 #. module: website_photogallery
 #: model:ir.ui.view,arch_db:website_photogallery.view_product_image_form

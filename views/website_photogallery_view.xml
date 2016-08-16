@@ -9,7 +9,7 @@
             <field name="name">website.photogallery.form</field>
             <field name="model">website.photogallery</field>
             <field name="arch" type="xml">
-                <form string="Product Images" version="7.0">
+                <form string="Photos">
                     <notebook colspan="4">
                         <page string="Image">
                             <group col="4" colspan="4">
@@ -21,8 +21,8 @@
                             <separator string="Preview (Only when saved)" colspan="4"/>
                             <field name="preview" widget="image" nolabel="1" colspan="4"/>
                         </page>
-                        <page string="Comments">
-                            <field name="comments" nolabel="1" colspan="4"/>
+                        <page string="Description">
+                            <field name="description" nolabel="1" colspan="4"/>
                         </page>
                     </notebook>
                 </form>
@@ -36,7 +36,7 @@
                 <tree string="Product Images">
                     <field name="name"/>
                     <field name="image"/>
-                    <field name="comments"/>
+                    <field name="description"/>
                 </tree>
             </field>
         </record>
