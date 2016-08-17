@@ -12,8 +12,8 @@
 			<table style="width:90%" align="center">
 			<tr>
 				<td style="width:60%;padding-bottom:1em;"> <span t-field="photo.image" t-field-options='{"widget": "image"}' /> </td>
-				<td style="width:10%;padding-bottom:1em;"></td>
-				<td style="width:30%; vertical-align:top;;padding-bottom:1em;" >
+				<td style="width:5%;padding-bottom:1em;"></td>
+				<td style="width:35%; vertical-align:top;;padding-bottom:1em;" >
 					<font size="4" face="Comic Sans MS">
 					<u><t t-esc="photo.name"/></u><br></br>  
 					<t t-esc="photo.description" /> 
