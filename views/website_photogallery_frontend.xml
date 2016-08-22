@@ -33,7 +33,6 @@
         <field name="name">Gallery</field>
         <field name="url">/page/photogallery</field>
         <field name="parent_id" ref="website.main_menu"/>
-        <field name="sequence" type="int">20</field>
 </record>
 
 </data>
